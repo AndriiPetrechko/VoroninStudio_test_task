@@ -520,8 +520,8 @@ body{
     position: absolute;
     bottom: 1%;
     left: 50%;
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     background-color: #00cdde;
     transform: translateX(-50%);
     z-index: 15;
@@ -535,10 +535,10 @@ body{
 .third_triangle{
     background-color: #f24444;
 }
-@media only screen and (max-device-width : 1024px) {
+@media only screen and (max-device-width : 640px) {
     .triangle{
-        width: 40px;
-        height: 15px;
+        width: 50px;
+        height: 20px;
         bottom: 2%;
     }
 }
