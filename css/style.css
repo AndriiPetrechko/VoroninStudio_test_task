@@ -17,7 +17,7 @@ body{
 }
 .carousel-indicators {
     top: 90%;
-    z-index: 25;
+    z-index: 101;
   }
 /* style for the first slide section */
 .first_slide{
@@ -399,6 +399,20 @@ body{
         left: 9%;
     }
 }
+@keyframes load_content_responsive{
+    0%{
+       display: none;
+       left: -800px;
+    }
+    40%{
+        display: none;
+        left: -800px;
+    }
+    100%{
+        display: block;
+        left: 4%;
+    }
+}
 
 @media only screen and (max-device-width : 1024px) {
     .content{
@@ -420,6 +434,7 @@ body{
         top: 20%;
         left: 4%;
         text-align: center;
+        animation: load_content_responsive 2s ease-out;
     }
     .content_line{
        margin: 20px auto 5px auto;
@@ -458,6 +473,39 @@ body{
         width: 90%;
     }
 }
+@media only screen and (max-device-width : 400px) {
+    .ellipse{
+        width: 50vw;
+        z-index: 20;
+    }
+    .hand_with_phone{
+        width: 75%;
+    }
+}
+@media (min-device-width : 1024px) and (max-device-height : 840px) {
+    .content_title{
+        font-size: 80px;
+        line-height: 75px;
+    }
+    .content_line{
+        width: 50px;
+        height: 5px;
+        margin-top: 20px;
+    }
+    .content_description{
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .content_btn_group{
+        margin-top: 20px;
+    }
+    .content_store_button{
+        font-size: 15px;
+        width: 210px;
+        height: 50px;
+    }
+}
+
 .triangle{
     position: absolute;
     bottom: 1%;
