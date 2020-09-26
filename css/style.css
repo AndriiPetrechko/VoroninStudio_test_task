@@ -214,7 +214,7 @@ body{
     align-items: space-between;
     justify-content: center;
     z-index: 75;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: all .8s;
 }
 .collapse_menu_active{
@@ -237,7 +237,12 @@ body{
 /* end style for burger menu*/
 
 /* end style for header */
-
+.middle_lines{
+    position: absolute;
+    right: 40%;
+    bottom: 35%;
+    z-index: 50;
+}
 .ellipse{
     position: absolute;
     right: 0;
@@ -277,7 +282,7 @@ body{
     bottom: -5px;
     z-index: 30;
     animation: load_hand 2s ease-out;
-    width: 50%;
+    width: 52%;
 }
 .hand_with_phone img{
     width: 100%;
@@ -402,6 +407,9 @@ body{
     .content_store_button{
         margin-top: 20px;
     }
+    .middle_lines{
+        display: none;
+    }
 } 
 @media only screen and (max-device-width : 840px) {
     .content_title{
@@ -409,7 +417,7 @@ body{
         line-height: 80px;
     }
     .content{
-        top: 10%;
+        top: 20%;
         left: 4%;
         text-align: center;
     }
@@ -429,7 +437,7 @@ body{
 } 
 @media only screen and (max-device-width : 640px) {
     .content{
-        top: 15%;
+        top: 20%;
         text-align: center;
     }
     .content_title{
@@ -441,6 +449,13 @@ body{
     }
     .slide_wrapper{
         width: 83%;
+    }
+    .ellipse{
+        width: 70vw;
+        z-index: 20;
+    }
+    .hand_with_phone{
+        width: 90%;
     }
 }
 .triangle{
@@ -549,7 +564,14 @@ body{
         margin-top: 100px;
     }
 } 
-
+@media only screen and (max-device-width : 640px) {
+    .hand_with_banan{
+        width: 70%;
+    }
+    .second_slide_ellipse{
+        width: 50vw;
+    }
+}
 /* end style for the second slide section*/
 
 /* style for the third slide*/
@@ -596,6 +618,11 @@ body{
         display: block;
         top: 0;
         transform: rotate(0deg);
+    }
+}
+@media only screen and (max-device-width : 640px) {
+    .hand_with_flowers{
+        width: 75%;
     }
 }
 /* end style for the third slide*/
