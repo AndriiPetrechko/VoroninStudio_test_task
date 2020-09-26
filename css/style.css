@@ -535,10 +535,10 @@ body{
 .third_triangle{
     background-color: #f24444;
 }
-@media only screen and (max-device-width : 640px) {
+@media only screen and (max-device-width : 1024px) {
     .triangle{
-        width: 50px;
-        height: 20px;
+        width: 40px;
+        height: 15px;
         bottom: 2%;
     }
 }
