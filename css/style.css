@@ -202,10 +202,9 @@ body{
     }
 }
 .collapse_menu{
-    display: none;
     position: fixed;
     top: -1600px;
-    right: -300px;
+    right: -500px;
     width: 100%;
     height: 100vh;
     background-color: #000;
@@ -214,10 +213,11 @@ body{
     align-items: space-between;
     justify-content: center;
     z-index: 75;
-    opacity: 0.9;
+    opacity: 0.1;
     transition: all .8s;
 }
 .collapse_menu_active{
+    opacity: 0.9;
     top: 0;
     right: 0;
     transition: all 1s; 
@@ -482,7 +482,7 @@ body{
         width: 75%;
     }
 }
-@media (min-device-width : 1024px) and (max-device-height : 1080px) {
+@media (min-device-width : 1024px) and (max-device-height : 900px) {
     .content{
        margin-left: 30px;
     }
